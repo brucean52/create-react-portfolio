@@ -1,28 +1,262 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.otf');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center; 
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+section {
+padding: 6rem 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+section#contact{
+padding: 3.5rem 0;
+}
+section.footer {
+padding-top: 3.5rem;
+padding-bottom: 0rem;
+}
+nav{
+background-color: white;
+}
+.nav-text-name {
+color: #127da1;
+font-size: 1.5rem;
+text-transform: uppercase;
+font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; 
+font-weight: bold;
 }
 
-.App-intro {
-  font-size: large;
+.nav-text-name:hover {
+color: black;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.nav-text {
+color: black;
+text-transform: uppercase;
+font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; 
+font-weight: bold;
 }
+
+.nav-text:hover, .nav-text:active{
+background-color: rgba(18,125,161,.9); 
+color: white;
+}
+
+.landing-img > img{
+width: 99vw;
+}
+
+hr{
+max-width: 75px;
+height: 8px;
+border-radius: 2px;
+background-color: #127da1; 
+margin-top: 3%; 
+margin-bottom: 3%;
+}
+
+h3.white-color, h4.white-color{
+color: white;
+}
+
+
+hr.white-color {
+background-color: white;
+}
+
+hr.sub{
+max-width: 50px;
+height: 5px;
+border-radius:1px;
+margin-top: 2%; 
+margin-bottom: 2%; 
+}
+
+.text-faded {
+color: rgba(255, 255, 255, 0.7);
+font-size: 1.35rem; 
+}
+
+.card-image > img{
+width: 100%; 
+height: 320px; 
+}
+
+.card .card-content{
+padding: 2%;
+
+}
+
+.row .col.card{
+padding: 0px 4px;
+box-shadow: 0px 1px 0px rgba(0,0,0,.2);
+margin-top: 0.5%;
+margin-bottom: 0;
+}
+
+.card .card-title{
+font-weight: 500;
+}
+
+.card-title.card-open{
+color: #127da1;
+font-weight: bold;
+}
+
+.btn{
+background-color: #127da1;
+font-weight: bold;
+padding: 0 1rem;
+margin-right: 5%;
+}
+
+.btn:hover{
+background-color: #127da1;
+filter: brightness(125%);
+}
+
+#about{
+background-color: #127da1;
+}
+
+.background-info{
+display: inline-block;
+}
+
+#aboutImg{
+filter: drop-shadow(10px 8px 2px #333333);
+}
+
+.bgImg{
+display: block;
+width: 40%;
+margin: 3% auto;
+filter: drop-shadow(5px 5px 2px #333333);
+}
+
+.background-text{
+padding: 5%;
+}
+
+p.text-faded{
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.skills > img{
+width: 50%;
+}
+
+.skills{
+margin: 3% auto;
+}
+
+#cssLogo{
+width: 19%;
+}
+
+#jqueryLogo{
+width: 30%;
+}
+
+#apiLogo{
+width: 20%;
+}
+
+#reactLogo{
+width: 25%;
+}
+
+#contact{
+background-color: #212529;
+}
+
+.input-field .prefix, .input-field input, .input-field textarea{
+color: white;
+}
+.input-field .prefix.active {
+color: #127da1;
+}
+
+.input-field input[type=text]:focus + label {
+color: #127da1;
+}
+
+.input-field input[type=text]:focus {
+border-bottom: 2px solid #127da1;
+box-shadow: 0 2px 0 0 #127da1;
+}
+
+.input-field input[type=text].valid, .input-field textarea[type=text].valid{
+border-bottom: 2px solid #127da1;
+box-shadow: 0 2px 0 0 #000;
+}
+
+textarea.materialize-textarea:focus, textarea.materialize-textarea:active {
+border-bottom: 1px solid #127da1;
+}
+
+p.text-faded.contact{
+margin: 2%;
+text-align: center;
+}
+
+p.text-faded.contact.dark{
+color: black;
+}
+
+form > .row{
+margin-bottom: .5%;
+}
+
+.footer{
+background-color: white;
+}
+
+.footer-links{
+display: inline-block;
+text-align: center;
+margin-left: 3%;
+margin-right: 3%;
+}
+
+.row.footerRow{
+text-align: center;
+}
+
+#github-logo, #linkedin-logo{
+width: 50px;
+}
+
+.footer-links .material-icons, .footer-links > a{
+color: #127da1;
+font-weight: 500;
+}
+
+.footer-links > a:hover{
+text-decoration: underline;
+}
+
+.footer-links i{
+transform: translateY(5px);
+}
+.footer-links i:active{
+transform: translateY(7px);
+}
+
+.footer-links img:active {
+transform: translateY(2px);
+}
+
