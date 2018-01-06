@@ -1,5 +1,7 @@
 import React from 'react';
 
+import skillsData from '../assets/data/skills_data';
+
 import htmlLogo from '../assets/images/skills/html_logo.png';
 import cssLogo from '../assets/images/skills/css_logo.png';
 import jsLogo from '../assets/images/skills/javascript_logo.png';

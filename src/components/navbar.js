@@ -1,5 +1,7 @@
 import React from 'react';
 
+import navbarData from '../assets/data/navbar_data';
+
 export default props =>{
     return(
         <div className="navbar-fixed">

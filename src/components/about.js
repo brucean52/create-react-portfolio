@@ -1,5 +1,6 @@
 import React from 'react';
 
+import aboutData from '../assets/data/about_data';
 import about from '../assets/images/about/creative.png';
 import calpolyLogo from '../assets/images/about/cp-logo.png';
 import lfzLogo from '../assets/images/about/lfz-logo.png';

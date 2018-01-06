@@ -1,4 +1,7 @@
 import React from 'react';
+
+import footerData from '../assets/data/footer_data';
+
 import linkedin from '../assets/images/footer/linkedin.jpg';
 import github from '../assets/images/footer/github.png';
 

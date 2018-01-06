@@ -1,5 +1,8 @@
 import React from 'react';
 
+import contactData from '../assets/data/contact_data';
+
+
 export default props =>{
     return(
         <section id='contact'>

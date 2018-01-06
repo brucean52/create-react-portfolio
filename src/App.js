@@ -3,6 +3,13 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css';
 import '../node_modules/materialize-css/dist/js/materialize.min.js';
 
 import './App.css';
+import './assets/css/navbar.css';
+import './assets/css/work_card.css';
+import './assets/css/about.css';
+import './assets/css/skills.css';
+import './assets/css/contact.css';
+import './assets/css/footer.css';
+
 
 import NavBar from './components/navbar';
 import LandingPage from './components/landing_page';
