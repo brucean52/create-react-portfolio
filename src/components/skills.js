@@ -42,7 +42,7 @@ export default props =>{
                     <div className="col s12 l6 skills">
                         <img className="col s3" src={jsLogo} alt=""/>
 
-                        <img id="reactLogo" className="col s3 l3" src={oopLogo} alt=""/>
+                        <img id="" className="col s3 l3" src={oopLogo} alt=""/>
                         <div className="col s6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius!
                         </div>  
                     </div>
@@ -59,8 +59,8 @@ export default props =>{
                     </div>
                     
                     <div className="col s12 l6 skills">
-                        <img id="jqueryLogo" className="col s6 l3" src={reactLogo} alt=""/>
-                        <img id="apiLogo" className="col s6 l3" src={reduxLogo} alt=""/>
+                        <img id="" className="col s6 l3" src={reactLogo} alt=""/>
+                        <img id="" className="col s6 l3" src={reduxLogo} alt=""/>
                         <div className="col s12 l6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, explicabo!
                         </div>
                     </div>
