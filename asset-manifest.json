@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.73ce43f4.css",
   "main.css.map": "static/css/main.73ce43f4.css.map",
-  "main.js": "static/js/main.6f315414.js",
-  "main.js.map": "static/js/main.6f315414.js.map",
+  "main.js": "static/js/main.af2dd1e5.js",
+  "main.js.map": "static/js/main.af2dd1e5.js.map",
   "static\\media\\1.png": "static/media/1.5b5f7fa0.png",
   "static\\media\\2.png": "static/media/2.038469e8.png",
   "static\\media\\3.png": "static/media/3.f44e72b7.png",
@@ -20,11 +20,11 @@
   "static\\media\\Roboto-Regular.woff2": "static/media/Roboto-Regular.5136cbe6.woff2",
   "static\\media\\Roboto-Thin.woff": "static/media/Roboto-Thin.44b78f14.woff",
   "static\\media\\Roboto-Thin.woff2": "static/media/Roboto-Thin.1f35e6a1.woff2",
+  "static\\media\\agile.png": "static/media/agile.9620a2b8.png",
   "static\\media\\bootstrap_ps.png": "static/media/bootstrap_ps.e5748d89.png",
   "static\\media\\cp-logo.png": "static/media/cp-logo.44ee1501.png",
   "static\\media\\creative.png": "static/media/creative.9f22e533.png",
   "static\\media\\css_logo.png": "static/media/css_logo.670c0bec.png",
-  "static\\media\\database.png": "static/media/database.d1c5eea3.png",
   "static\\media\\github.png": "static/media/github.56aa79c1.png",
   "static\\media\\html_logo.png": "static/media/html_logo.fc4b15b5.png",
   "static\\media\\javascript_logo.png": "static/media/javascript_logo.c4cea1c3.png",
@@ -32,7 +32,9 @@
   "static\\media\\kingston-logo.png": "static/media/kingston-logo.60e22369.png",
   "static\\media\\lfz-logo.png": "static/media/lfz-logo.e24d8fa1.png",
   "static\\media\\linkedin.jpg": "static/media/linkedin.f6eaf68b.jpg",
-  "static\\media\\node_php.png": "static/media/node_php.a44110a4.png",
+  "static\\media\\oop.png": "static/media/oop.6c1b20cd.png",
+  "static\\media\\redux.png": "static/media/redux.59c46753.png",
   "static\\media\\responsive-design.png": "static/media/responsive-design.e759a1e3.png",
-  "static\\media\\splash.png": "static/media/splash.a6e7a60c.png"
+  "static\\media\\splash.png": "static/media/splash.a6e7a60c.png",
+  "static\\media\\vs_code.jpg": "static/media/vs_code.071dd09f.jpg"
 }
