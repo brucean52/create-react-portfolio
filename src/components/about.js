@@ -2,8 +2,16 @@ import React from 'react';
 import Background from './background';
 
 import aboutData from '../assets/data/about_data';
+import backgroundData from '../assets/data/background_data';
 
 export default props =>{
+
+    const backgroundList = backgroundData.map((item, index)=>{
+        return(
+            <Background data={item} key={index}/>
+        );
+    });
+
     return(
         <section id='about'>
         <div className="container">
@@ -18,10 +26,9 @@ export default props =>{
             <h4 className='white-color'>{aboutData.background_title}</h4>
             <hr className='white-color sub'/>
             <div className="row">
-                <Background img={aboutData.background_img1} img_alt={aboutData.about_img1_alt} text={aboutData.background_text1}/>
-                <Background img={aboutData.background_img2} img_alt={aboutData.about_img2_alt} text={aboutData.background_text2}/>
-                <Background img={aboutData.background_img3} img_alt={aboutData.about_img3_alt} text={aboutData.background_text3}/>                
-            </div>       
+                {backgroundList}
+            </div>
+            
         </div>
         </section>
     );
