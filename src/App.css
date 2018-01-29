@@ -163,20 +163,21 @@ width: 50%;
 margin: 3% auto;
 }
 
-#cssLogo{
-width: 19%;
+.cssLogo.col.s3{
+  width : 19%;
 }
 
-#jqueryLogo{
-width: 30%;
+.oopLogo.col.s3 {
+  margin-top: 5%;
 }
 
-#apiLogo{
-width: 20%;
+.apiLogo.col.s3 {
+  width: 20%;
 }
 
-#reactLogo{
-width: 25%;
+.reduxLogo.col.s3 {
+  width: 20%;
+  margin-top: 3%;
 }
 
 #contact{
@@ -186,26 +187,22 @@ background-color: #212529;
 .input-field .prefix, .input-field input, .input-field textarea{
 color: white;
 }
-.input-field .prefix.active {
+
+.material-icons.prefix.active{
+  color: #127da1;
+}
+
+
+.input-field>input[type=text]:focus + label {
 color: #127da1;
 }
 
-.input-field input[type=text]:focus + label {
-color: #127da1;
-}
-
-.input-field input[type=text]:focus {
-border-bottom: 2px solid #127da1;
-box-shadow: 0 2px 0 0 #127da1;
-}
-
-.input-field input[type=text].valid, .input-field textarea[type=text].valid{
-border-bottom: 2px solid #127da1;
-box-shadow: 0 2px 0 0 #000;
-}
-
-textarea.materialize-textarea:focus, textarea.materialize-textarea:active {
+.input-field>input[type=text]#icon_prefix:focus,
+.input-field>input[type=email]#icon_email:focus,
+.input-field>input[type=text]#icon_prefix2:focus,
+.input-field>input[type=text]#textArea1:focus {
 border-bottom: 1px solid #127da1;
+box-shadow: 0 1px 0 0 #127da1;
 }
 
 p.text-faded.contact{

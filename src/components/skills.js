@@ -4,7 +4,6 @@ import SkillsRow from './skills_row';
 import skillsData from '../assets/data/skills_data';
 
 export default props =>{
-    //map the skills section
     const skillsList = skillsData.map((item, index)=>{
         return(
             <SkillsRow key={index} data={item}/>

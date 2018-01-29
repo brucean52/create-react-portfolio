@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default props => {
-    console.log("Skills Data:", props.data);
     const {data} = props;
     return(
         <div className="row">
