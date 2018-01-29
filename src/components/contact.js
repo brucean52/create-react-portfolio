@@ -21,7 +21,7 @@ export default props =>{
         <div className="input-field col s12 m6">
           <i className="material-icons prefix">{contactData.email_icon}</i>
           <input id="icon_email" type="email" className="validate" placeholder="Email"/>
-          <label for="email" data-error="Please enter a valid email"></label>
+          <label data-error="Please enter a valid email"></label>
         </div>
       </div>
       <div className="row">

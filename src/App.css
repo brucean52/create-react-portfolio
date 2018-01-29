@@ -30,12 +30,30 @@ padding-bottom: 0rem;
 nav{
 background-color: white;
 }
-.nav-text-name {
+
+.nav-text-name, .brand-logo.center {
 color: #127da1;
 font-size: 1.5rem;
 text-transform: uppercase;
 font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; 
 font-weight: bold;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+.side-nav{
+  position: absolute;
+  width: 50vw;
+  left: 50%;
+  background-color: white;
+  height: 100vh;
+
 }
 
 .nav-text-name:hover {
@@ -52,6 +70,11 @@ font-weight: bold;
 .nav-text:hover, .nav-text:active{
 background-color: rgba(18,125,161,.9); 
 color: white;
+}
+
+.button-collapse>.material-icons{
+  color: black;
+  margin: 0;
 }
 
 .landing-img > img{
