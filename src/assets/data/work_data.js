@@ -9,31 +9,37 @@ export default [
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo1
+        img: photo1,
+        alt: 'alttext'
     },
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo2
+        img: photo2,
+        alt: 'alttext'
     },
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo3
+        img: photo3,
+        alt: 'alttext'
     },
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo4
+        img: photo4,
+        alt: 'alttext'
     },
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo5
+        img: photo5,
+        alt: 'alttext'
     },
     {
         name: 'Project Name',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo6
+        img: photo6,
+        alt: 'alttext'
     }
 ];

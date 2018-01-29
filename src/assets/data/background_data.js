@@ -11,7 +11,7 @@ export default [
     {
         img: kingstonLogo,
         img_alt: 'Kingston',
-        text: '5+ years experience as a <strong>Flash Design Engineer </strong>at <em>Kingston Technoloy</em> has molded me into an engineer that can take a concept and develop it into a high volume product.'
+        text: '5+ years experience as a <strong>Flash Design Engineer </strong>at <em>Kingston Technology</em> has molded me into an engineer that can take a concept and develop it into a high volume product.'
     },
     {
         img: calpolyLogo,

@@ -9,7 +9,7 @@ export default props=>{
     const cardList = workDataArray.map((item, index) =>{
         console.log(item);
         return(
-            <Card title={item.name} info={item.info} src={item.img} key={index} />
+            <Card title={item.name} info={item.info} src={item.img} key={index} alt={item.alt}/>
         );
     });
     return(
