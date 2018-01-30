@@ -49,10 +49,11 @@ font-weight: bold;
 
 .side-nav{
   position: absolute;
-  width: 50vw;
-  left: 50%;
+  width: 40vw;
+  left: 40%;
   background-color: white;
   height: 100vh;
+  outline-color: white;
 
 }
 
@@ -72,7 +73,13 @@ background-color: rgba(18,125,161,.9);
 color: white;
 }
 
-.button-collapse>.material-icons{
+.right.material-icons.sideNavClose {
+  color: black;
+  margin: 0;
+  padding-right: 0;
+}
+
+.button-collapse>.material-icons {
   color: black;
   margin: 0;
 }
