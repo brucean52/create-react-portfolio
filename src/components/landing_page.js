@@ -1,10 +1,10 @@
 import React from 'react';
-import landingData from '../assets/data/landing_data';
+import splash from '../assets/images/landing/splash.png';
 
 export default props =>{
     return(
-        <div className='landing-img'>
-        <img src={landingData.img} alt={landingData.alt}/>
+        <div className='landing-img'id="landing">
+        <img src={splash} alt="landing imd"/>
         </div>
     );
 }

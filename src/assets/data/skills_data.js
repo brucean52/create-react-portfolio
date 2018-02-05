@@ -10,8 +10,11 @@ import apiLogo from '../images/skills/api.png';
 import reactLogo from '../images/skills/react-logo.png';
 import reduxLogo from '../images/skills/redux.png';
 
-//import nodephpLogo from '../images/skills/node_php.png';
-//import databaseLogo from '../images/skills/database.png';
+import nodephpLogo from '../images/skills/node_php.png';
+import databaseLogo from '../images/skills/database.png';
+
+import androidLogo from '../images/skills/android.png';
+import cLogo from '../images/skills/c-logo.png';
 
 import agileLogo from '../images/skills/agile.png';
 import vscodeLogo from '../images/skills/vs_code.jpg';
@@ -50,6 +53,22 @@ export default[
         img_22: reduxLogo,
         img_22_alt: 'Redux',
         img_22_css_class: 'reduxLogo',
+        text_2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, tenetur!'
+    },
+    {
+        img_11: nodephpLogo,
+        img_11_alt: 'Node Php',
+        img_11_css_class: 'nodephpLogo',
+        img_12: databaseLogo,
+        img_12_alt: 'database',
+        img_12_css_class: 'dbLogo',
+        text_1: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, tenetur!',
+        img_21: androidLogo,
+        img_21_alt: 'Android',
+        img_21_css_class: 'androidLogo',
+        img_22: cLogo,
+        img_22_alt: 'C',
+        img_22_css_class: 'cLogo',
         text_2: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, tenetur!'
     },
     {
