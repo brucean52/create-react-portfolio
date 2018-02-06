@@ -5,7 +5,10 @@
   "license": "MIT",
   "homepage": "https://brucean52.github.io/create-react-portfolio",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "materialize-css": "^0.100.2",
+    "nodemailer": "^4.4.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
