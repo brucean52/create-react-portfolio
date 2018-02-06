@@ -1,6 +1,7 @@
-import nodemailer from 'nodemailer'
-
-import config from './config'
+//import nodemailer from 'nodemailer'
+const nodemailer = require('nodemailer');
+const config = require("./config/index");
+//import config from './config'
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -10,12 +11,12 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const send = ({ email, name, text }) => {
+module.exports = ({ email, name, text }) => {
   const from = name && email ? `${name} <${email}>` : `${name || email}`
   const message = {
     from,
     to: 'bruce.dev89@gmail.com',
-    subject: `New message from ${from} at creating-contact-forms-with-nodemailer-and-react`,
+    subject: `New message from ${from}: ${subject}`,
     text,
     replyTo: from
   };
@@ -26,5 +27,3 @@ const send = ({ email, name, text }) => {
     )
   })
 }
-
-export default send

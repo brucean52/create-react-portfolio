@@ -1,8 +1,11 @@
-import 'babel-polyfill'
-import express from 'express'
-import bodyParser from 'body-parser'
+//import 'babel-polyfill'
+const express = require('express');
+//import express from 'express'
+const bodyParser = require('body-parser');
+//import bodyParser from 'body-parser'
 
-import mailer from './mailer'
+const mailer = require("./mailer/index");
+//import mailer from './mailer'
 
 const app = express()
 app.use(bodyParser.json());
