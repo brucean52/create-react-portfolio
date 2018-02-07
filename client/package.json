@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Bruce",
   "license": "MIT",
-  "homepage": "https://brucean52.github.io/create-react-portfolio",
+  "homepage": "http://brucedev.net",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-polyfill": "^6.26.0",

@@ -22,7 +22,7 @@ export default class Contact extends Component {
     const { name, email, subject, message } = this.state;
     //console.log('axios call');
     
-    axios.post('http://localhost:4000/contact', {name, email, subject, message}).then( resp => {
+    axios.post('/contact', {name, email, subject, message}).then( resp => {
       console.log('post response: ', resp);
     }).catch( err => {
       console.log('post err response: ', err);
