@@ -18,7 +18,7 @@ export default class Contact extends Component {
 
   sendData(event){
     event.preventDefault();
-    debugger
+    
     const { name, email, subject, message } = this.state;
     //console.log('axios call');
     
