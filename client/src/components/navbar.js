@@ -43,10 +43,10 @@ export default class NavBar extends Component {
             navbar = (
                 <nav>
                     <div className="nav-wrapper container">
-                    <a className="button-collapse" onClick={this.openNav}><i className="material-icons">menu</i></a>
                     <a className='nav-text-name center brand-logo'href="#">Bruce</a>
+                    <a className="button-collapse" onClick={this.openNav}><i className="material-icons">menu</i></a>
                     <ul className={`side-nav ${this.state.open ? 'visible': 'hidden' }`} tabIndex="0" onBlur={ this.closeNav }>
-                        <li><a className='nav-text'><i onClick={this.closeNav} className="material-icons right sideNavClose">close</i></a></li>
+                        <li><a className='nav-text'><i onClick={this.closeNav} className="material-icons left sideNavClose">close</i></a></li>
                         <li><a className='nav-text' href="#work">Work</a></li>
                         <li><a className='nav-text' onClick={this.closeNav} href="#about">About</a></li>
                         <li><a className='nav-text' onClick={this.closeNav} href="#skills">Skills</a></li>
