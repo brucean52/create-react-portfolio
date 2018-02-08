@@ -25,27 +25,34 @@ export default class Contact extends Component {
     axios.post('/contact', {name, email, subject, message}).then( resp => {
       //console.log('post response: ', resp);
       
-      this.updateState(resp.data.message);
+      this.updateState(resp);
     }).catch( err => {
       //console.log('post err response: ', err);
-      this.updateState(err.data.message);
+      this.updateState(err);
     });
 
   }
 
   updateState(response){
-    this.setState({
-      name: '',
-      message: '',
-      email: '',
-      subject: '',
-      response: response
-    });
+    if(response.data.success){
+      this.setState({
+        name: '',
+        message: '',
+        email: '',
+        subject: '',
+        response: response.data.message
+      });
+    } else {
+      this.setState({
+        response: response.data.message
+      });
+    }
+
   }
 
   render(){
-    const { response } = this.state;
-    console.log('contact state', this.state);
+    const { name, subject, email, message, response } = this.state;
+    //console.log('contact state', this.state);
     return(
         <section id='contact'>
         <div className="container">
@@ -58,23 +65,23 @@ export default class Contact extends Component {
           <div className="row">
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" className="validate" placeholder="Name" name="name" onChange={e => this.setState({name: e.target.value})}/>
+                <input id="icon_prefix" type="text" className="validate" placeholder="Name" name="name" value={name} onChange={e => this.setState({name: e.target.value})}/>
               </div>
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">email</i>
-                <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" onChange={e => this.setState({email: e.target.value})}/>
+                <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" value={email} onChange={e => this.setState({email: e.target.value})}/>
                 <label data-error="Please enter a valid email"></label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
                 <i className="material-icons prefix">mode_edit</i>
-                <input id="icon_prefix2" className="validate" type="text" placeholder="Subject" name="subject" onChange={e => this.setState({subject: e.target.value})}/>
+                <input id="icon_prefix2" className="validate" type="text" placeholder="Subject" name="subject" value={subject} onChange={e => this.setState({subject: e.target.value})}/>
               </div>
             </div>
             <div className="row">
             <div className="input-field col s12">
-              <input id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" name="message" onChange={e => this.setState({message: e.target.value})}/>
+              <input id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" value={message} name="message" onChange={e => this.setState({message: e.target.value})}/>
             </div>
           </div>
         <button className="btn waves-effect waves-light" type="submit" name="action">Submit<i className="material-icons right">send</i>
