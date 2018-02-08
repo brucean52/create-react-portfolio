@@ -21,27 +21,27 @@ export default class Contact extends Component {
     event.preventDefault();
     
     const { name, email, subject, message } = this.state;
-
+    let response = '';
     axios.post('/contact', {name, email, subject, message}).then( resp => {
-      console.log('post response: ', resp);
-      this.setState({
-        name: '',
-        message: '',
-        email: '',
-        subject: '',
-        response: resp
-      });
+      //console.log('post response: ', resp);
+      response = resp;
     }).catch( err => {
-      console.log('post err response: ', err);
-      this.setState({
-        response: err
-      });
+      //console.log('post err response: ', err);
+      response = err;
+    });
+
+    this.setState({
+      name: '',
+      message: '',
+      email: '',
+      subject: '',
+      response: response
     });
   }
 
   render(){
     const { response } = this.state;
-
+    console.log('contact state', this.state);
     return(
         <section id='contact'>
         <div className="container">
@@ -75,10 +75,11 @@ export default class Contact extends Component {
           </div>
         <button className="btn waves-effect waves-light" type="submit" name="action">Submit<i className="material-icons right">send</i>
         </button>
+        <div className="white-color contact-response">{response}</div>
           </form>
+          
             </div>       
 
-          <div className="white-color">{response}</div>
         </div>
         </section>
     );
