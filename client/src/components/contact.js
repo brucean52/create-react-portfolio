@@ -9,7 +9,8 @@ export default class Contact extends Component {
       name: '',
       message: '',
       email: '',
-      subject: ''
+      subject: '',
+      response: ''
     }
 
 
@@ -20,16 +21,27 @@ export default class Contact extends Component {
     event.preventDefault();
     
     const { name, email, subject, message } = this.state;
-    //console.log('axios call');
-    
+
     axios.post('/contact', {name, email, subject, message}).then( resp => {
       console.log('post response: ', resp);
+      this.setState({
+        name: '',
+        message: '',
+        email: '',
+        subject: '',
+        response: resp
+      });
     }).catch( err => {
       console.log('post err response: ', err);
+      this.setState({
+        response: err
+      });
     });
   }
 
   render(){
+    const { response } = this.state;
+
     return(
         <section id='contact'>
         <div className="container">
@@ -65,8 +77,9 @@ export default class Contact extends Component {
         </button>
           </form>
             </div>       
-        </div>
 
+          <div className="white-color">{response}</div>
+        </div>
         </section>
     );
   }
