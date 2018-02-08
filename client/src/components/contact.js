@@ -21,15 +21,19 @@ export default class Contact extends Component {
     event.preventDefault();
     
     const { name, email, subject, message } = this.state;
-    let response = '';
+    let response = '';    
     axios.post('/contact', {name, email, subject, message}).then( resp => {
       //console.log('post response: ', resp);
-      response = resp;
+      
+      this.updateState(resp);
     }).catch( err => {
       //console.log('post err response: ', err);
-      response = err;
+      this.updateState(err);
     });
 
+  }
+
+  updateState(response){
     this.setState({
       name: '',
       message: '',
