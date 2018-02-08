@@ -13,7 +13,7 @@ export default props =>{
         <div className="container">
             <h3 className='white-color'>Who Am I?</h3>
             <hr className='white-color'/>
-            <p className='text-faded'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quo culpa consequuntur rerum ullam blanditiis ipsa nisi, ut sequi quia, eius nemo. Fuga molestiae quis saepe? Reiciendis hic sapiente facere.</p>
+            <p className='text-faded'>Growing up building computers, I've always had a passion for building and creating things. So when I graduated with a bachelor's in electrical engineering from Cal Poly San Luis Obispo, it was both an accomplishment and a dream. Next, it was designing solid state drives (SSD) at Kingston Technology where I got to take concepts and then turn them into products. Now I want to take my passion, education, and experience to develop websites and applications.</p>
             <div className='row'>
             <img id="aboutImg" className='col s10 m6 l4 offset-s1 offset-m3 offset-l4 responsive-img' src={about} alt="About me"/>
             </div>
@@ -37,7 +37,7 @@ export default props =>{
         <div className="col s12 m4">
             <img src={calpolyLogo} alt="Cal Poly" className='bgImg responsive-img'/>
             <div className="background-text text-faded">
-                Obtaining my bachelor's degree in <strong>Electrical Engineering</strong> while applying Cal Poly's <em>Learn by Doing</em> approach is how I acquired my logical and analytical skills.
+                Earning my bachelor's degree in <strong>Electrical Engineering</strong> while applying Cal Poly's <em>Learn by Doing</em> approach is how I acquired my logical and analytical skills.
             </div>
         </div>
             </div>
