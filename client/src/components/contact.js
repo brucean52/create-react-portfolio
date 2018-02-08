@@ -25,10 +25,10 @@ export default class Contact extends Component {
     axios.post('/contact', {name, email, subject, message}).then( resp => {
       //console.log('post response: ', resp);
       
-      this.updateState(resp);
+      this.updateState(resp.data.message);
     }).catch( err => {
       //console.log('post err response: ', err);
-      this.updateState(err);
+      this.updateState(err.data.message);
     });
 
   }
