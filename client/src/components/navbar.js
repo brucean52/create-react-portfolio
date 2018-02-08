@@ -36,7 +36,7 @@ export default class NavBar extends Component {
 
     render(){
         const { width } = this.state;
-        const isMobile = width <= 600;
+        const isMobile = width <= 991;
         let navbar = {};
 
         if(isMobile){
