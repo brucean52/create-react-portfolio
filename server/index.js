@@ -25,22 +25,22 @@ const transporter = nodemailer.createTransport({
 
 app.post('/contact', (req, res) => {
   const { email, name, subject, message} = req.body
-  console.log('req.body', req.body);
+  //console.log('req.body', req.body);
 
   const mailOptions = {
     from: email,         // Sender of the email
     to: 'bruce.dev89@gmail.com',  // Recipient of the email
-    subject: `${subject} - ${name}`,              // Subject of the email
-    text: message,                // Message of the email
+    subject: `${email} - ${subject}`,              // Subject of the email
+    text: `${name} - ${message}`,                // Message of the email
 
   };
   
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error);
-      res.json({"success": false, error: "There was an error sending the email!"});
+      //console.log(error);
+      res.json({"success": false, message: "There was an error sending the email!"});
     } else {
-      console.log('Email sent successfully' + info.response);
+      //console.log('Email sent successfully' + info.response);
       res.json({"success": true, message: "Email sent successfully!"});
     }
   });

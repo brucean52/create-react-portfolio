@@ -10,7 +10,8 @@ export default class Contact extends Component {
       message: '',
       email: '',
       subject: '',
-      response: ''
+      response: '',
+      submit: false
     }
 
 
@@ -19,28 +20,64 @@ export default class Contact extends Component {
 
   sendData(event){
     event.preventDefault();
+    this.setState({
+      submit: true
+    });
     
     const { name, email, subject, message } = this.state;
-
+    let response = '';    
     axios.post('/contact', {name, email, subject, message}).then( resp => {
-      console.log('post response: ', resp);
+      //console.log('post response: ', resp);
+      
+      this.updateState(resp);
+    }).catch( err => {
+      //console.log('post err response: ', err);
+      this.updateState(err);
+    });
+
+  }
+
+  updateState(response){
+    if(response.data.success){
       this.setState({
         name: '',
         message: '',
         email: '',
         subject: '',
-        response: resp
+        response: response.data.message,
+        submit: false
       });
-    }).catch( err => {
-      console.log('post err response: ', err);
+    } else {
       this.setState({
-        response: err
+        response: response.data.message,
+        submit: false
       });
-    });
+    }
+
   }
 
   render(){
-    const { response } = this.state;
+    const { name, subject, email, message, response, submit } = this.state;
+    //console.log('contact state', this.state);
+    let submitResult = {};
+
+    if(submit){
+      submitResult = (
+        <div class="preloader-wrapper contact-response active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      );
+    } else {
+      submitResult = <div className="white-color contact-response">{response}</div>;
+    }
 
     return(
         <section id='contact'>
@@ -54,31 +91,30 @@ export default class Contact extends Component {
           <div className="row">
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" className="validate" placeholder="Name" name="name" onChange={e => this.setState({name: e.target.value})}/>
+                <input id="icon_prefix" type="text" className="validate" placeholder="Name" name="name" value={name} onChange={e => this.setState({name: e.target.value})}/>
               </div>
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">email</i>
-                <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" onChange={e => this.setState({email: e.target.value})}/>
+                <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" value={email} onChange={e => this.setState({email: e.target.value})}/>
                 <label data-error="Please enter a valid email"></label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
                 <i className="material-icons prefix">mode_edit</i>
-                <input id="icon_prefix2" className="validate" type="text" placeholder="Subject" name="subject" onChange={e => this.setState({subject: e.target.value})}/>
+                <input id="icon_prefix2" className="validate" type="text" placeholder="Subject" name="subject" value={subject} onChange={e => this.setState({subject: e.target.value})}/>
               </div>
             </div>
             <div className="row">
             <div className="input-field col s12">
-              <input id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" name="message" onChange={e => this.setState({message: e.target.value})}/>
+              <input id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" value={message} name="message" onChange={e => this.setState({message: e.target.value})}/>
             </div>
           </div>
         <button className="btn waves-effect waves-light" type="submit" name="action">Submit<i className="material-icons right">send</i>
         </button>
+        {submitResult}
           </form>
             </div>       
-
-          <div className="white-color">{response}</div>
         </div>
         </section>
     );
