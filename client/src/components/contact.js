@@ -63,7 +63,7 @@ export default class Contact extends Component {
 
     if(submit){
       submitResult = (
-        <div class="preloader-wrapper contact-response small active">
+        <div class="preloader-wrapper contact-response active">
         <div class="spinner-layer spinner-blue-only">
           <div class="circle-clipper left">
             <div class="circle"></div>
