@@ -29,7 +29,7 @@ app.post('/contact', (req, res) => {
 
   const mailOptions = {
     from: email,         // Sender of the email
-    to: 'bruce.an52@gmail.com',  // Recipient of the email
+    to: 'bruce.dev89@gmail.com',  // Recipient of the email
     subject: `${subject} - ${name}`,              // Subject of the email
     text: message,                // Message of the email
 
@@ -38,7 +38,7 @@ app.post('/contact', (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.json({"success": false, error: "Some message"});
+      res.json({"success": false, error: "There was an error sending the email!"});
     } else {
       console.log('Email sent successfully' + info.response);
       res.json({"success": true, message: "Email sent successfully!"});
