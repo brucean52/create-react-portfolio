@@ -10,7 +10,8 @@ export default class Contact extends Component {
       message: '',
       email: '',
       subject: '',
-      response: ''
+      response: '',
+      submit: false
     }
 
 
@@ -19,6 +20,9 @@ export default class Contact extends Component {
 
   sendData(event){
     event.preventDefault();
+    this.setState({
+      submit: true
+    });
     
     const { name, email, subject, message } = this.state;
     let response = '';    
@@ -40,19 +44,41 @@ export default class Contact extends Component {
         message: '',
         email: '',
         subject: '',
-        response: response.data.message
+        response: response.data.message,
+        submit: false
       });
     } else {
       this.setState({
-        response: response.data.message
+        response: response.data.message,
+        submit: false
       });
     }
 
   }
 
   render(){
-    const { name, subject, email, message, response } = this.state;
+    const { name, subject, email, message, response, submit } = this.state;
     //console.log('contact state', this.state);
+    let submitResult = {};
+
+    if(submit){
+      submitResult = (
+        <div class="preloader-wrapper contact-response small active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      );
+    } else {
+      submitResult = <div className="white-color contact-response">{response}</div>;
+    }
+
     return(
         <section id='contact'>
         <div className="container">
@@ -86,11 +112,9 @@ export default class Contact extends Component {
           </div>
         <button className="btn waves-effect waves-light" type="submit" name="action">Submit<i className="material-icons right">send</i>
         </button>
-        <div className="white-color contact-response">{response}</div>
+        {submitResult}
           </form>
-          
             </div>       
-
         </div>
         </section>
     );
