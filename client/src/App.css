@@ -97,7 +97,7 @@ margin-top: 3%;
 margin-bottom: 3%;
 }
 
-h3.white-color, h4.white-color{
+h3.white-color, h4.white-color, .white-color{
 color: white;
 }
 
@@ -246,6 +246,15 @@ color: black;
 
 form > .row{
 margin-bottom: .5%;
+}
+
+.contact-response {
+  display: inline-block;
+}
+
+.contact-response.preloader-wrapper{
+  width: 25px;
+  height: 25px;
 }
 
 .footer{
