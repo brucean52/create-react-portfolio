@@ -3,7 +3,8 @@
 Create React Porfolio is a simple to use portfolio template using the latest web design technologies.
 
 - [Create React App](https://github.com/facebookincubator/create-react-app)
-- [Materialize CSS](http://materializecss.com/)  
+- [Materialize CSS](http://materializecss.com/)
+- [NodeMailer](https://nodemailer.com/about/)  
 
 ## Quickstart
 ```
@@ -20,4 +21,4 @@ npm start
 
 
 ## File Structure
-The assets folder contains the CSS, text data, images, and font files needed to adjust the information in the template. The work, background, and skills data are created dynamically and can support additional data objects.
+
