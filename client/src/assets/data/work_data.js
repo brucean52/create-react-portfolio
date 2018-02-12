@@ -7,39 +7,33 @@ import photo6 from '../images/work/6.png';
 
 export default [
     {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
+        name: 'FlexNotes',
+        info: 'FlexNotes is an innovative multi-panel note taking application that allows students to organize their multi-media study materials in one place. A MERN Stack (MongoDB, Express, React Redux, Node.js) app, my role in this group project was creating the navigation, linking, routing and connecting the front end to the back end.',
         img: photo1,
         alt: 'alttext'
     },
     {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
+        name: 'Environmindful',
+        info: 'Originally developed during an API hackathon, I had the idea to create an environmental dashboard by combining various APIs (Google Maps, Google Charts, OpenWeather, AQI, and News API). This was built using Bootstrap, jQuery, and Ajax.',
         img: photo2,
         alt: 'alttext'
     },
     {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
+        name: 'Match Two!',
+        info: 'Match Two! is a comic book themed, memory match game. The project was built using jQuery, Bootstrap, scalable vector graphics (SVG), Photoshop, and Illustrator',
         img: photo3,
         alt: 'alttext'
     },
     {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
+        name: 'Student Grade Table',
+        info: 'A tech demo using core Javascript, PHP, and MySQL.',
         img: photo4,
         alt: 'alttext'
     },
     {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
+        name: 'Create React Portfolio',
+        info: 'A simple portfolio template using React, nodemailer and Material Design.',
         img: photo5,
         alt: 'alttext'
     },
-    {
-        name: 'Project Name',
-        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod quisquam, quos fugiat ipsa soluta nemo quis consequatur odit, totam eos at temporibus sint! Consequuntur corrupti itaque fuga ipsa quod?',
-        img: photo6,
-        alt: 'alttext'
-    }
 ];

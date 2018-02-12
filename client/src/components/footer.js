@@ -11,7 +11,7 @@ export default props =>{
               <div className="col s12">
                 <h4>Let's Connect!</h4>
                 <hr className="sub"/>
-                <p className="text-faded contact dark">Obey the principles without being boung by them.</p>
+                <p className="text-faded contact dark">Obey the principles without being bound by them.</p>
                 
                 <div className="row footerRow">
                   <div className="footer-links">
