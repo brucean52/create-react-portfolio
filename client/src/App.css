@@ -3,7 +3,6 @@
   src: url('./assets/fonts/Montserrat-Regular.otf');
 }
 
-
 h1,
 h2,
 h3,
@@ -14,6 +13,10 @@ font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 text-transform: uppercase;
 font-weight: bold;
 text-align: center; 
+}
+
+strong {
+  font-weight: 550;
 }
 
 section {
@@ -303,4 +306,3 @@ transform: translateY(7px);
 .footer-links img:active {
 transform: translateY(2px);
 }
-
