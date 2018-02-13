@@ -26,8 +26,8 @@ export default [
         alt: 'alttext'
     },
     {
-        name: 'Student Grade Table',
-        info: 'A tech demo using core Javascript, PHP, and MySQL.',
+        name: 'Address Book',
+        info: 'A tech demo using core Javascript, CSS Grid, Flexbox, Axios, PHP, and MySQL.',
         img: photo4,
         alt: 'alttext'
     },
