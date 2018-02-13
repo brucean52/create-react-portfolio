@@ -168,6 +168,10 @@ background-color: #127da1;
 filter: brightness(125%);
 }
 
+.work-img{
+  object-fit: cover;
+}
+
 #about{
 background-color: #127da1;
 }

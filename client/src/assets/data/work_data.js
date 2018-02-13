@@ -3,7 +3,8 @@ import photo2 from '../images/work/2.png';
 import photo3 from '../images/work/3.png';
 import photo4 from '../images/work/4.png';
 import photo5 from '../images/work/5.png';
-import photo6 from '../images/work/6.png';
+import matchTwo from '../images/work/match_two.png';
+import portfolio from '../images/work/create_react_portfolio.png';
 
 export default [
     {
@@ -21,7 +22,7 @@ export default [
     {
         name: 'Match Two!',
         info: 'Match Two! is a comic book themed, memory match game. The project was built using jQuery, Bootstrap, scalable vector graphics (SVG), Photoshop, and Illustrator',
-        img: photo3,
+        img: matchTwo,
         alt: 'alttext'
     },
     {
@@ -32,8 +33,8 @@ export default [
     },
     {
         name: 'Create React Portfolio',
-        info: 'A simple portfolio template using React, nodemailer and Material Design.',
-        img: photo5,
+        info: 'A simple portfolio template using React, Nodemailer and Material Design.',
+        img: portfolio,
         alt: 'alttext'
     },
 ];
