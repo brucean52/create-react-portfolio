@@ -42,7 +42,7 @@ export default props =>{
                 
                 <div className="col s12 l6 skills">
 
-                <div className="col s6 push-l6"><strong>Javascript</strong> using <strong>Object Oriented Programming</strong></div>  
+                <div className="col s6 push-l6"><strong>Javascript</strong> and <strong>Object Oriented Programming</strong> are essential developer skills</div>  
                     <img className="col s3 pull-l6 jsLogo" src={jsLogo} alt="Javascript"/>
 
                     <img className="col s3 pull-l6 oopLogo" src={oopLogo} alt='OOP'/>
@@ -55,7 +55,7 @@ export default props =>{
 
                     <img className="col s3 jqueryLogo" src={jqueryajaxLogo} alt='JQuery Ajax'/>
                     <img className="col s3 apiLogo" src={apiLogo} alt='API'/>
-                    <div className="col s6"><strong>jQuery</strong> is for DOM Manipulation. <strong>Ajax</strong> and <strong>Axios</strong> calls for <strong>API</strong> usage</div>
+                    <div className="col s6"><strong>jQuery</strong> simplifies DOM manipulation. <strong>AJAX</strong> and <strong>Axios</strong> make <strong>RESTful API</strong> calls easy</div>
 
                 </div>
                 
@@ -74,12 +74,12 @@ export default props =>{
 
                     <img className='col s3 nodephpLogo' src={nodephpLogo} alt="Node PHP"/>
                     <img className='col s3 androidLogo' src={databaseLogo} alt='database'/>
-                    <div className="col s6">Knowledgable and experienced using both the industry standard <strong>PHP</strong> with <strong>MySQL</strong> and the emerging <strong>Node.js</strong> with <strong>MongoDB</strong></div>
+                    <div className="col s6">Experience with <strong>CRUD</strong> operations using both the industry standard <strong>PHP</strong> with <strong>MySQL</strong> and the emerging <strong>Node.js</strong> with <strong>MongoDB</strong></div>
                 </div>
                 
                 <div className="col s12 l6 skills">
 
-                <div className="col s6 push-l6">During college, I developed an <strong>Android</strong> internet of things (IOT) app for my <a href="http://digitalcommons.calpoly.edu/eesp/113/">senior project</a>. <strong>C</strong> is the most popular embedded programming language</div>  
+                <div className="col s6 push-l6">During college, I developed an <strong>Android</strong> internet of things (IOT) app for my <a rel="noopener noreferrer" target="_blank" href="http://digitalcommons.calpoly.edu/eesp/113/">senior project</a>. <strong>C</strong> is the most popular embedded programming language</div>  
                     <img className='col s3 pull-l6 androidLogo' src={androidLogo} alt='Android'/>
 
                     <img className='col s3 pull-l6 cLogo'  src={cLogo} alt="C"/>
@@ -98,7 +98,7 @@ export default props =>{
                 
                 <div className="col s12 l6 skills">
 
-                <div className="col s6 push-l6"><strong>Mobile Responsive Design</strong> using libraries like <strong>Bootstrap</strong>, <strong>Material Design</strong>. Image editing experience using Adobe <strong>Photoshop</strong> and <strong>Illustrator</strong>.</div>  
+                <div className="col s6 push-l6"><strong>Mobile Responsive Design</strong> using <strong>Bootstrap</strong> and <strong>Material Design</strong>. Image editing experience using Adobe <strong>Photoshop</strong> and <strong>Illustrator</strong></div>  
                     <img className='col s3 pull-l6 responsiveLogo' src={responsiveDesign} alt='Responsive Design'/>
 
                     <img className='col s3 pull-l6 bootstrapLogo'  src={bootstrapPs} alt='BootStrap Material Design PhotoShop Illustrator'/>
