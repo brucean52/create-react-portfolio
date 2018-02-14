@@ -17,6 +17,7 @@ export default props =>{
             <div className='row'>
             <img id="aboutImg" className='col s10 m6 l4 offset-s1 offset-m3 offset-l4 responsive-img' src={about} alt="About me"/>
             </div>
+            <div className="text-faded center-align"><em>"Where there's a will, there's a way."</em></div>
             <p className='text-faded'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit magni, reiciendis doloremque debitis quod, corporis tempora dicta rerum molestiae perspiciatis libero delectus sequi cumque consequuntur fugit enim minima amet?</p>
             
             <h4 className='white-color'>Background</h4>

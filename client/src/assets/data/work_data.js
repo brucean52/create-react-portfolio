@@ -15,7 +15,7 @@ export default [
     },
     {
         name: 'Environmindful',
-        info: 'Originally developed during an API hackathon, I had the idea to create an environmental dashboard by combining various APIs (Google Maps, Google Charts, OpenWeather, AQI, and News API). This was built using Bootstrap, jQuery, and Ajax.',
+        info: 'Originally developed during an API hackathon, I had the idea to create an environmental dashboard. We used Google Maps, Google Charts, OpenWeather, AQI, Carma and News APIs to construct this. This was built using Bootstrap, jQuery, and Ajax.',
         img: photo2,
         alt: 'alttext'
     },
@@ -25,7 +25,7 @@ export default [
         img: matchTwo,
         alt: 'alttext'
     },
-    {
+    {   
         name: 'Address Book',
         info: 'A tech demo using core Javascript, CSS Grid, Flexbox, Axios, PHP, and MySQL.',
         img: photo4,
