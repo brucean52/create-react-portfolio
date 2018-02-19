@@ -12,9 +12,9 @@ export default [
         name: 'FlexNotes',
         info: 'FlexNotes is an innovative multi-panel note taking application that allows students to organize their multi-media study materials in one place. A MERN Stack (MongoDB, Express, React Redux, Node.js) app, my role in this group project was creating the navigation, linking, routing and connecting the front end to the back end.',
         img: photo1,
-        alt: 'alttext',
+        alt: 'FlexNotes',
         codeLink: "",
-        demoLink: ""
+        demoLink: "https://www.flexnotes.net"
     },
     {
         name: 'Environmindful',
@@ -29,8 +29,8 @@ export default [
         info: 'Match Two! is a comic book themed, memory match game. The project was built using jQuery, Bootstrap, scalable vector graphics (SVG), Photoshop, and Illustrator',
         img: matchTwo,
         alt: 'Match Two',
-        codeLink: "",
-        demoLink: ""
+        codeLink: "https://github.com/brucean52/memory-match-js",
+        demoLink: "https://brucean52.github.io/memory-match-js/"
     },
     {   
         name: 'Address Book',
@@ -45,7 +45,7 @@ export default [
         info: 'A simple portfolio template using React, Nodemailer and Material Design.',
         img: portfolio,
         alt: 'Portfolio',
-        codeLink: "",
-        demoLink: ""
+        codeLink: "https://github.com/brucean52/create-react-portfolio",
+        demoLink: "https://www.brucedev.net"
     },
 ];

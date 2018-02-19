@@ -15,13 +15,13 @@ export default props =>{
                 
                 <div className="row footerRow">
                   <div className="footer-links">
-                    <a className="" href="#!"><img id="github-logo" src={githubLogo} alt="Github" /><br/>Github</a>
+                    <a className="" target="_blank" href="https://github.com/brucean52"><img id="github-logo" src={githubLogo} alt="Github" /><br/>Github</a>
                   </div>
                 <div className="footer-links">
-                    <a className="" href="#!"><i className="medium material-icons">description</i><br/>Resume</a>
+                    <a className="" target="_blank" href="https://docs.google.com/document/d/1rrbZ19gzpMc20vD2X7FIiZ8AYqprKevJcwA4AfR0kiw/edit?usp=sharing"><i className="medium material-icons">description</i><br/>Resume</a>
                 </div>
                 <div className="footer-links">
-                    <a href="#!"><img id="linkedin-logo" src={linkedinLogo} alt="LinkedIn" /><br/>LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/bruce-lok-an-b8528732/"><img id="linkedin-logo" src={linkedinLogo} alt="LinkedIn" /><br/>LinkedIn</a>
                 </div>
 
                 </div>
