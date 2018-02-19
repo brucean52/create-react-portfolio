@@ -98,7 +98,7 @@ export default props =>{
                 
                 <div className="col s12 l6 skills">
 
-                <div className="col s6 push-l6 skillsText"><strong>Responsive design</strong> using <strong>CSS Grid, Flexbox, Bootstrap</strong> and <strong>Material Design</strong>. Image editing experience using Adobe <strong>Photoshop</strong> and <strong>Illustrator</strong></div>  
+                <div className="col s6 push-l6 skillsText"><strong>Responsive design</strong> using <strong>Flexbox, Bootstrap</strong> and <strong>Material Design</strong>. Image editing experience using Adobe <strong>Photoshop</strong> and <strong>Illustrator</strong></div>  
                     <img className='col s3 pull-l6 responsiveLogo' src={responsiveDesign} alt='Responsive Design'/>
 
                     <img className='col s3 pull-l6 bootstrapLogo'  src={bootstrapPs} alt='BootStrap Material Design PhotoShop Illustrator'/>
