@@ -55,7 +55,7 @@ export default props =>{
 
                     <img className="col s3 jqueryLogo" src={jqueryajaxLogo} alt='JQuery Ajax'/>
                     <img className="col s3 apiLogo" src={apiLogo} alt='API'/>
-                    <div className="col s6 skillsText"><strong>jQuery</strong> simplifies DOM manipulation. <strong>AJAX</strong> and <strong>Axios</strong> makes <strong>RESTful API</strong> calls easy</div>
+                    <div className="col s6 skillsText"><strong>jQuery</strong> simplifies HTML DOM manipulation. <strong>Ajax</strong> and <strong>Axios</strong> makes <strong>RESTful API</strong> calls easy</div>
 
                 </div>
                 

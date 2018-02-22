@@ -18,7 +18,7 @@ export default props =>{
             <img id="aboutImg" className='col s10 m6 l4 offset-s1 offset-m3 offset-l4 responsive-img' src={about} alt="About me"/>
             </div>
             <div className="text-faded center-align"><em>"Where there's a will, there's a way."</em></div>
-            <p className='text-faded'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit magni, reiciendis doloremque debitis quod, corporis tempora dicta rerum molestiae perspiciatis libero delectus sequi cumque consequuntur fugit enim minima amet?</p>
+            <p className='text-faded'>My approach to UX/UI design and software development is to balance form and function. I think a design should be intuitive, visually balanced, and it allows the content to shine. Designs that create a great user experience are significant because they cause people to buy products from the same company over and over again. Additionally, implementing designs with code efficiency in mind will enhance performance, scalability, and overall product quality. With this approach, there is no limit on what can be achieved.</p>
             
             <h4 className='white-color'>Background</h4>
             <hr className='white-color sub'/>
