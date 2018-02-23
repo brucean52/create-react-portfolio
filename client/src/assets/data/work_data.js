@@ -34,7 +34,7 @@ export default [
     },
     {   
         name: 'Contact List',
-        info: 'A technical demo using core Javascript, Flexbox, Axios, PHP, and MySQL.',
+        info: 'A technical demo using core Javascript, Regex, Flexbox, Axios, PHP, and MySQL.',
         img: photo4,
         alt: 'Contact List',
         codeLink: "https://github.com/brucean52/contact_list",
