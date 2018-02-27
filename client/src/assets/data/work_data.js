@@ -3,6 +3,7 @@ import photo2 from '../images/work/2.png';
 import photo3 from '../images/work/3.png';
 import photo4 from '../images/work/4.png';
 import photo5 from '../images/work/5.png';
+import flexnotes from '../images/work/flexnotes.png';
 import environmindful from '../images/work/environmindful.png';
 import matchTwo from '../images/work/match_two.png';
 import portfolio from '../images/work/create_react_portfolio.png';
@@ -11,7 +12,7 @@ export default [
     {
         name: 'FlexNotes',
         info: 'Built with a MERN Stack (MongoDB, Express, React Redux, Node.js), FlexNotes is an innovative multi-panel note taking application that allows students to organize their multi-media study materials in one place.  My role in this group project was creating the navigation, linking, routing and connecting the front end to the back end. LearningFuze students are able to import the LearningFuze curriculum to their account (password required).',
-        img: photo1,
+        img: flexnotes,
         alt: 'FlexNotes',
         codeLink: "https://github.com/conmeconte/flexnotes",
         demoLink: "https://www.flexnotes.net"
@@ -34,7 +35,7 @@ export default [
     },
     {   
         name: 'Contact List',
-        info: 'A technical demo using jQuery, Ajax, Regex, Flexbox, PHP, and MySQL.',
+        info: 'A technical demo using jQuery, Ajax, Flexbox, PHP, and MySQL.',
         img: photo4,
         alt: 'Contact List',
         codeLink: "https://github.com/brucean52/contact_list",
