@@ -7,13 +7,18 @@ Create React Porfolio is a simple to use portfolio template using the latest web
 - [NodeMailer](https://nodemailer.com/about/)  
 
 ## Quickstart
+
+The client directory is for front end design. The server directory is for node mailer. The following commands are for both directories.
+
 ```
-cd app-directory
+cd client or server
 npm install
 npm start  
 ```
 
 ## Available Commands
+
+These commands are available in the /client directory
 
 >1. `npm run start` - starts the development server with hot reloading enabled
 >2. `npm run build` - bundles the code into build folder for deployment

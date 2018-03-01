@@ -39,7 +39,7 @@ export default [
         img: photo4,
         alt: 'Contact List',
         codeLink: "https://github.com/brucean52/contact_list",
-        demoLink: ""
+        demoLink: "http://contact-list.brucedev.net/"
     },
     {
         name: 'Create React Portfolio',
