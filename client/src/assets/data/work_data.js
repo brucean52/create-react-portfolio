@@ -1,8 +1,4 @@
-import photo1 from '../images/work/1.png';
-import photo2 from '../images/work/2.png';
-import photo3 from '../images/work/3.png';
-import photo4 from '../images/work/4.png';
-import photo5 from '../images/work/5.png';
+import contactList from '../images/work/contact_list.png';
 import flexnotes from '../images/work/flexnotes.png';
 import environmindful from '../images/work/environmindful.png';
 import matchTwo from '../images/work/match_two.png';
@@ -36,7 +32,7 @@ export default [
     {   
         name: 'Contact List',
         info: 'A technical demo using jQuery, Ajax, Flexbox, PHP, and MySQL.',
-        img: photo4,
+        img: contactList,
         alt: 'Contact List',
         codeLink: "https://github.com/brucean52/contact_list",
         demoLink: "http://contact-list.brucedev.net/"
