@@ -11,7 +11,8 @@ export default class Contact extends Component {
       email: '',
       subject: '',
       response: '',
-      submit: false
+      submit: false,
+      redMsg: false
     }
 
 
@@ -20,20 +21,50 @@ export default class Contact extends Component {
 
   sendData(event){
     event.preventDefault();
-    this.setState({
-      submit: true
-    });
-    
+
     const { name, email, subject, message } = this.state;
-    let response = '';    
-    axios.post('/contact', {name, email, subject, message}).then( resp => {
-      //console.log('post response: ', resp);
-      
-      this.updateState(resp);
-    }).catch( err => {
-      //console.log('post err response: ', err);
-      this.updateState(err);
-    });
+    let response = '';
+    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let sendToServer = true;
+    if( name === '' ){
+      this.setState({
+        response: 'Please enter a name',
+        redMsg: true
+      });
+      sendToServer = false;
+    } else if( emailRegex.test(email)===false){
+      this.setState({
+        response: 'Please enter a valid email',
+        redMsg: true
+      });
+      sendToServer = false;
+    } else if( subject === ''){
+      this.setState({
+        response: 'Please enter a subject',
+        redMsg: true
+      });
+      sendToServer = false;
+    } else if( message === ''){
+      this.setState({
+        response: 'Please enter a message',
+        redMsg: true
+      });
+      sendToServer = false;
+    }
+
+    if(sendToServer){
+      axios.post('/contact', {name, email, subject, message}).then( resp => {
+
+        this.updateState(resp);
+      }).catch( err => {
+        this.updateState(err);
+      });
+      this.setState({
+        submit: true,
+        redMsg: false
+      });
+    }
+
 
   }
 
@@ -57,26 +88,26 @@ export default class Contact extends Component {
   }
 
   render(){
-    const { name, subject, email, message, response, submit } = this.state;
+    const { name, subject, email, message, response, submit, redMsg } = this.state;
     //console.log('contact state', this.state);
     let submitResult = {};
 
     if(submit){
       submitResult = (
-        <div class="preloader-wrapper contact-response active">
-        <div class="spinner-layer spinner-blue-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
+        <div className="preloader-wrapper contact-response active">
+        <div className="spinner-layer spinner-blue-only">
+          <div className="circle-clipper left">
+            <div className="circle"></div>
+          </div><div className="gap-patch">
+            <div className="circle"></div>
+          </div><div className="circle-clipper right">
+            <div className="circle"></div>
           </div>
         </div>
       </div>
       );
     } else {
-      submitResult = <div className="white-color contact-response">{response}</div>;
+      submitResult = <div className={`${redMsg ? "red-text": "white-color"} contact-response`}>{response}</div>;
     }
 
     return(
@@ -96,18 +127,18 @@ export default class Contact extends Component {
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">email</i>
                 <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" value={email} onChange={e => this.setState({email: e.target.value})}/>
-                <label data-error="Please enter a valid email"></label>
+                {/* <label htmlFor="icon_email" data-error="Please enter a valid email"></label> */}
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s12">
+              <div className="input-field col s12"> 
                 <i className="material-icons prefix">mode_edit</i>
                 <input id="icon_prefix2" className="validate" type="text" placeholder="Subject" name="subject" value={subject} onChange={e => this.setState({subject: e.target.value})}/>
               </div>
             </div>
             <div className="row">
             <div className="input-field col s12">
-              <input id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" value={message} name="message" onChange={e => this.setState({message: e.target.value})}/>
+              <textarea id="textArea1" className="materialize-textarea validate" type="text" placeholder="Message" value={message} name="message" onChange={e => this.setState({message: e.target.value})}/>
             </div>
           </div>
         <button className="btn waves-effect waves-light" type="submit" name="action">Submit<i className="material-icons right">send</i>
