@@ -15,7 +15,6 @@ export default class Contact extends Component {
       redMsg: false
     }
 
-
     this.sendData = this.sendData.bind(this);
   }
 
@@ -89,7 +88,6 @@ export default class Contact extends Component {
 
   render(){
     const { name, subject, email, message, response, submit, redMsg } = this.state;
-    //console.log('contact state', this.state);
     let submitResult = {};
 
     if(submit){
@@ -127,7 +125,6 @@ export default class Contact extends Component {
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">email</i>
                 <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" value={email} onChange={e => this.setState({email: e.target.value})}/>
-                {/* <label htmlFor="icon_email" data-error="Please enter a valid email"></label> */}
               </div>
             </div>
             <div className="row">

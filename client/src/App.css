@@ -67,7 +67,7 @@ nav {
     background-color: #127da1;
 }
 
-.nav-text-name:hover {
+.nav-text-name:hover, .black-color.sideNavClose.left {
     color: black;
 }
 
@@ -84,8 +84,7 @@ nav {
     color: white;
 }
 
-.right.material-icons.sideNavClose {
-    color: black;
+.left.material-icons.sideNavClose {
     margin: 0;
     padding-right: 0;
 }
@@ -114,7 +113,8 @@ hr {
 
 h3.white-color,
 h4.white-color,
-.white-color {
+.white-color,
+.white-color.sideNavClose.left {
     color: white;
 }
 

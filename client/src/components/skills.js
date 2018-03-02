@@ -44,7 +44,6 @@ export default props =>{
 
                 <div className="col s6 push-l6 skillsText"><strong>Javascript</strong> and <strong>Object Oriented Programming</strong> are essential developer skills</div>  
                     <img className="col s3 pull-l6 jsLogo" src={jsLogo} alt="Javascript"/>
-
                     <img className="col s3 pull-l6 oopLogo" src={oopLogo} alt='OOP'/>
                 </div>
 
@@ -63,7 +62,6 @@ export default props =>{
 
                 <div className="col s6 push-l6 skillsText"><strong>React's</strong> declaractive component structure combined with <strong>Redux's</strong> state management is my favorite front end framework</div>  
                     <img className='col s3 pull-l6 reactLogo' src={reactLogo} alt='React'/>
-
                     <img className='col s3 pull-l6 reduxLogo' src={reduxLogo} alt='Redux'/>
                 </div>
                 
@@ -81,7 +79,6 @@ export default props =>{
 
                 <div className="col s6 push-l6 skillsText">Built an <strong>Android</strong> internet of things (IOT) app for my <a rel="noopener noreferrer" target="_blank" href="http://digitalcommons.calpoly.edu/eesp/113/">senior project</a>. <strong>C</strong> is the most popular embedded programming language</div>  
                     <img className='col s3 pull-l6 androidLogo' src={androidLogo} alt='Android'/>
-
                     <img className='col s3 pull-l6 cLogo'  src={cLogo} alt="C"/>
                 </div>
                 
@@ -100,7 +97,6 @@ export default props =>{
 
                 <div className="col s6 push-l6 skillsText"><strong>Responsive design</strong> using <strong>Flexbox, Bootstrap</strong> and <strong>Material Design</strong>. Image editing experience using Adobe <strong>Photoshop</strong> and <strong>Illustrator</strong></div>  
                     <img className='col s3 pull-l6 responsiveLogo' src={responsiveDesign} alt='Responsive Design'/>
-
                     <img className='col s3 pull-l6 bootstrapLogo'  src={bootstrapPs} alt='BootStrap Material Design PhotoShop Illustrator'/>
                 </div>
                 
