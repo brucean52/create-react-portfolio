@@ -15,6 +15,7 @@ export default class Contact extends Component {
       redMsg: false,
       emailValid: true
     }
+    this.emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     this.sendData = this.sendData.bind(this);
     this.validEmail = this.validEmail.bind(this);
@@ -25,7 +26,6 @@ export default class Contact extends Component {
 
     const { name, email, subject, message } = this.state;
     let response = '';
-    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let sendToServer = true;
     if( name === '' ){
       this.setState({
@@ -33,7 +33,7 @@ export default class Contact extends Component {
         redMsg: true
       });
       sendToServer = false;
-    } else if( emailRegex.test(email)===false){
+    } else if( this.emailRegex.test(email)===false){
       this.setState({
         response: 'Please enter a valid email',
         redMsg: true,
@@ -90,9 +90,8 @@ export default class Contact extends Component {
   }
 
   validEmail(e){
-    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let email = e.target.value;
-    if(emailRegex.test(email)===false){
+    if(this.emailRegex.test(email)===false){
       this.setState({
         email: email,
         emailValid: false
