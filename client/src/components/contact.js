@@ -12,10 +12,13 @@ export default class Contact extends Component {
       subject: '',
       response: '',
       submit: false,
-      redMsg: false
+      redMsg: false,
+      emailValid: true
     }
+    this.emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     this.sendData = this.sendData.bind(this);
+    this.validEmail = this.validEmail.bind(this);
   }
 
   sendData(event){
@@ -23,7 +26,6 @@ export default class Contact extends Component {
 
     const { name, email, subject, message } = this.state;
     let response = '';
-    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let sendToServer = true;
     if( name === '' ){
       this.setState({
@@ -31,10 +33,11 @@ export default class Contact extends Component {
         redMsg: true
       });
       sendToServer = false;
-    } else if( emailRegex.test(email)===false){
+    } else if( this.emailRegex.test(email)===false){
       this.setState({
         response: 'Please enter a valid email',
-        redMsg: true
+        redMsg: true,
+        emailValid: false
       });
       sendToServer = false;
     } else if( subject === ''){
@@ -86,9 +89,32 @@ export default class Contact extends Component {
 
   }
 
+  validEmail(e){
+    let email = e.target.value;
+    if(this.emailRegex.test(email)===false){
+      this.setState({
+        email: email,
+        emailValid: false
+      });
+    } else {
+      this.setState({
+        email: email,
+        emailValid: true
+      });
+    }
+  }
+
   render(){
-    const { name, subject, email, message, response, submit, redMsg } = this.state;
+    const { name, subject, email, message, response, submit, redMsg, emailValid } = this.state;
     let submitResult = {};
+    let emailStyle = {};
+    
+    if(emailValid===false){
+      emailStyle = {
+        borderBottom: '1px solid #F44336',
+        boxShadow: '0 1px 0 0 #F44336'
+      }
+    }
 
     if(submit){
       submitResult = (
@@ -107,13 +133,13 @@ export default class Contact extends Component {
     } else {
       submitResult = <div className={`${redMsg ? "red-text": "white-color"} contact-response`}>{response}</div>;
     }
-
+    
     return(
         <section id='contact'>
         <div className="container">
         <h4 className='white-color'>Contact Me</h4>
             <hr className='white-color sub'/>
-            <p className='text-faded contact'>The world becomes a better place when people truly express themselves.</p>
+            <p className='text-faded contact'>The world becomes a better place when people truly expre  ss themselves.</p>
             <div className="row">
             
         <form className="col s12" onSubmit={this.sendData}>
@@ -124,7 +150,7 @@ export default class Contact extends Component {
               </div>
               <div className="input-field col s12 m6">
                 <i className="material-icons prefix">email</i>
-                <input id="icon_email" type="email" className="validate" placeholder="Email" name="email" value={email} onChange={e => this.setState({email: e.target.value})}/>
+                <input id="icon_email" type="text" style={emailStyle} className="validate" placeholder="Email" name="email" value={email} onChange={e => this.validEmail(e)}/>
               </div>
             </div>
             <div className="row">
