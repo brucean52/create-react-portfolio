@@ -96,6 +96,7 @@ nav {
 
 nav .button-collapse {
     float: right;
+    cursor: pointer;
 }
 
 .landing-img > img {
