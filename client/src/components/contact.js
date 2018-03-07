@@ -28,7 +28,7 @@ export default class Contact extends Component {
     let response = '';
     let sendToServer = true;
     
-    if( name === '' || !/\S/.test(name)){
+    if(!/\S/.test(name)){
       this.setState({
         response: 'Please enter a name',
         redMsg: true
@@ -41,13 +41,13 @@ export default class Contact extends Component {
         emailValid: false
       });
       sendToServer = false;
-    } else if( subject === '' || !/\S/.test(subject)){
+    } else if(!/\S/.test(subject)){
       this.setState({
         response: 'Please enter a subject',
         redMsg: true
       });
       sendToServer = false;
-    } else if( message === '' ||  !/\S/.test(message)){
+    } else if(!/\S/.test(message)){
       this.setState({
         response: 'Please enter a message',
         redMsg: true
