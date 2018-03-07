@@ -43,6 +43,6 @@ export default [
         img: portfolio,
         alt: 'Portfolio',
         codeLink: "https://github.com/brucean52/create-react-portfolio",
-        demoLink: "https://www.brucedev.net"
+        demoLink: ""
     },
 ];
