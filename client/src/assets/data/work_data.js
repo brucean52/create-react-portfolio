@@ -7,7 +7,7 @@ import portfolio from '../images/work/create_react_portfolio.png';
 export default [
     {
         name: 'FlexNotes',
-        info: 'Built with a MERN Stack (MongoDB, Express, React Redux, Node.js), FlexNotes is an innovative multi-panel note taking application that allows students to organize their multi-media study materials in one place.  My role in this group project was creating the navigation, linking, routing and connecting the front end to the back end. LearningFuze students are able to import the LearningFuze curriculum to their account (password required).',
+        info: 'Built with a MERN Stack (MongoDB, Express, React Redux, Node.js), FlexNotes is an multi-panel note taking application that allows students to organize their multi-media study materials in one place.  Flexnotes has a binder, tab, and page navigation for organization. And each page has three panels: one for videos, slides, and notes. My role in this group project was creating the navigation, linking, routing and connecting the front end to the back end.',
         img: flexnotes,
         alt: 'FlexNotes',
         codeLink: "https://github.com/conmeconte/flexnotes",
