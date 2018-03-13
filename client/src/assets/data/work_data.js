@@ -31,7 +31,7 @@ export default [
     },
     {   
         name: 'Contact List',
-        info: 'A technical demo using jQuery, Ajax, Flexbox, PHP, and MySQL.',
+        info: 'Contact list is a mobile responsive technical demo using jQuery, Ajax, and Flexbox. A PHP back end was used to perform CRUD operations to a MySQL database.',
         img: contactList,
         alt: 'Contact List',
         codeLink: "https://github.com/brucean52/contact_list",
