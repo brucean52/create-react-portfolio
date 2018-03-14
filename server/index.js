@@ -5,9 +5,6 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const config = require("./config");
 
-//const mailer = require("./mailer/index");
-//import mailer from './mailer'
-
 const app = express()
 app.use(cors());
 app.use(bodyParser.json());
@@ -24,8 +21,8 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/contact', (req, res) => {
-  const { email, name, subject, message} = req.body
-  //console.log('req.body', req.body);
+  const { email, name, subject, message} = req.body;
+
 
   const mailOptions = {
     from: email,         // Sender of the email
@@ -44,14 +41,6 @@ app.post('/contact', (req, res) => {
       res.json({"success": true, message: "Email sent successfully!"});
     }
   });
-
-  // mailer({ email, name, text: message }).then(() => {
-  //   console.log(`Sent the message "${message}" from <${name}> ${email}.`);
-  //   res.redirect('/#success');
-  // }).catch((error) => {
-  //   console.log(`Failed to send the message "${message}" from <${name}> ${email} with the error ${error && error.message}`);
-  //   res.redirect('/#error');
-  // })
 
 });
 
