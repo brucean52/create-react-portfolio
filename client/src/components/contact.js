@@ -64,6 +64,9 @@ export default class Contact extends Component {
         this.updateState(resp);
       }).catch( err => {
         this.updateState(err);
+      });
+      this.setState({
+        submit: true
       });      
     }
 
@@ -80,7 +83,6 @@ export default class Contact extends Component {
   }
 
   updateState(response){
-    console.log('response', response);
     if(response.data.success){
       this.setState({
         name: '',
@@ -88,13 +90,13 @@ export default class Contact extends Component {
         email: '',
         subject: '',
         response: response.data.message,
-        submit: true,
+        submit: false,
         redMsg: false
       });
     } else {
       this.setState({
         response: response.data.message,
-        submit: true,
+        submit: false,
         redMsg: true
       });
     }
