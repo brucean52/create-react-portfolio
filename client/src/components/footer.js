@@ -9,7 +9,7 @@ export default props =>{
           <div className="container">
             <div className="row">
               <div className="col s12">
-                <h4>Let's Connect!</h4>
+                <h3>Let's Connect!</h3>
                 <hr className="sub"/>
                 <p className="text-faded contact dark">Obey the principles without being bound by them.</p>
                 

@@ -28,7 +28,7 @@ export default class Contact extends Component {
     let response = '';
     let sendToServer = true;
     
-    if( name === '' || !/\S/.test(name)){
+    if(!/\S/.test(name)){
       this.setState({
         response: 'Please enter a name',
         redMsg: true
@@ -41,13 +41,13 @@ export default class Contact extends Component {
         emailValid: false
       });
       sendToServer = false;
-    } else if( subject === '' || !/\S/.test(subject)){
+    } else if(!/\S/.test(subject)){
       this.setState({
         response: 'Please enter a subject',
         redMsg: true
       });
       sendToServer = false;
-    } else if( message === '' ||  !/\S/.test(message)){
+    } else if(!/\S/.test(message)){
       this.setState({
         response: 'Please enter a message',
         redMsg: true
@@ -56,22 +56,31 @@ export default class Contact extends Component {
     }
 
     if(sendToServer){
+      
+      setTimeout(()=>{
+        this.submitCheck, 5000
+      });
       axios.post('/contact', {name, email, subject, message}).then( resp => {
-
         this.updateState(resp);
       }).catch( err => {
         this.updateState(err);
-      });
-      this.setState({
-        submit: true,
-        redMsg: false
-      });
+      });      
     }
-
 
   }
 
+  submitCheck(){
+    const { submit } = this.state;
+    if(submit === false){
+      this.setState({
+        response: '404 Error. Message has not been sent!',
+        redMsg: true
+      });
+    }
+  }
+
   updateState(response){
+    console.log('response', response);
     if(response.data.success){
       this.setState({
         name: '',
@@ -79,12 +88,14 @@ export default class Contact extends Component {
         email: '',
         subject: '',
         response: response.data.message,
-        submit: false
+        submit: true,
+        redMsg: false
       });
     } else {
       this.setState({
         response: response.data.message,
-        submit: false
+        submit: true,
+        redMsg: true
       });
     }
 
@@ -138,7 +149,7 @@ export default class Contact extends Component {
     return(
         <section id='contact'>
         <div className="container">
-        <h4 className='white-color'>Contact Me</h4>
+        <h3 className='white-color'>Contact Me</h3>
             <hr className='white-color sub'/>
             <p className='text-faded contact'>The world becomes a better place when people truly express themselves.</p>
             <div className="row">
