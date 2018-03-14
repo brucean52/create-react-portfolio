@@ -63,7 +63,7 @@ export default class Contact extends Component {
       axios.post('/contact', {name, email, subject, message}).then( resp => {
         this.updateState(resp);
       }).catch( err => {
-        this.updateState(err);
+        this.errorResponse(err);
       });
       this.setState({
         submit: true
@@ -82,7 +82,17 @@ export default class Contact extends Component {
     }
   }
 
+  errorResponse(error){
+    //let errorString = JSON.stringify(error);
+    this.setState({
+      response: '404 Error. Message has not been sent!',
+      submit: false,
+      redMsg: true
+    });
+  }
+
   updateState(response){
+    //console.log('repsonse', response);
     if(response.data.success){
       this.setState({
         name: '',
