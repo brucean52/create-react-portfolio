@@ -330,3 +330,14 @@ form > .row {
         margin-top: 2%;
     }
 }
+
+@media (max-width: 767px){
+    .responsiveLogo.col.s3, .bootstrapLogo.col.s3, 
+    .agileLogo.col.s3, .vscodeLogo.col.s3, .androidLogo.col.s3, 
+    .cLogo.col.s3, .nodephpLogo.col.s3, .androidLogo.col.s3, 
+    .reactLogo.col.s3, .reduxLogo.col.s3, .jqueryLogo.col.s3, 
+    .apiLogo.col.s3, .jsLogo.col.s3, .oopLogo.col.s3 {
+        padding-top: 10%;
+    }
+}
+
