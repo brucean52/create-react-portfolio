@@ -85,7 +85,7 @@ export default class Contact extends Component {
   errorResponse(error){
     //let errorString = JSON.stringify(error);
     this.setState({
-      response: '404 Error. Message has not been sent!',
+      response: 'There was an issue sending the email. Please try again!',
       submit: false,
       redMsg: true
     });
