@@ -213,6 +213,9 @@ p.text-faded {
 }
 
 .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 3% auto;
 }
 
@@ -231,8 +234,8 @@ p.text-faded {
 }
 
 .reduxLogo.col.s3 {
-    width: 20%;
-    margin-top: 1%;
+    width: 22%;
+    margin-bottom: 3%;
 }
 
 #contact {
@@ -328,16 +331,6 @@ form > .row {
 @media (max-width: 991px) {
     .skillsText {
         margin-top: 2%;
-    }
-}
-
-@media (max-width: 767px){
-    .responsiveLogo.col.s3, .bootstrapLogo.col.s3, 
-    .agileLogo.col.s3, .vscodeLogo.col.s3, .androidLogo.col.s3, 
-    .cLogo.col.s3, .nodephpLogo.col.s3, .androidLogo.col.s3, 
-    .reactLogo.col.s3, .reduxLogo.col.s3, .jqueryLogo.col.s3, 
-    .apiLogo.col.s3, .jsLogo.col.s3, .oopLogo.col.s3 {
-        padding-top: 10%;
     }
 }
 

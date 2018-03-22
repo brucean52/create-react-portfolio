@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.4418ce70.css",
-  "main.css.map": "static/css/main.4418ce70.css.map",
-  "main.js": "static/js/main.3f92552f.js",
-  "main.js.map": "static/js/main.3f92552f.js.map",
+  "main.css": "static/css/main.b8958e2b.css",
+  "main.css.map": "static/css/main.b8958e2b.css.map",
+  "main.js": "static/js/main.88eed760.js",
+  "main.js.map": "static/js/main.88eed760.js.map",
   "static\\media\\Montserrat-Regular.otf": "static/media/Montserrat-Regular.91696e09.otf",
   "static\\media\\Roboto-Bold.woff": "static/media/Roboto-Bold.eed9aab5.woff",
   "static\\media\\Roboto-Bold.woff2": "static/media/Roboto-Bold.c0f1e4a4.woff2",
@@ -37,7 +37,7 @@
   "static\\media\\node_php.png": "static/media/node_php.9fec8901.png",
   "static\\media\\oop.png": "static/media/oop.6c1b20cd.png",
   "static\\media\\react-logo.png": "static/media/react-logo.9978c2e2.png",
-  "static\\media\\redux.png": "static/media/redux.31d7164b.png",
+  "static\\media\\redux.png": "static/media/redux.26d55a43.png",
   "static\\media\\responsive-design.png": "static/media/responsive-design.e759a1e3.png",
   "static\\media\\splash.png": "static/media/splash.a6e7a60c.png",
   "static\\media\\vs_code_npm_postman.png": "static/media/vs_code_npm_postman.0d4b0d27.png"
