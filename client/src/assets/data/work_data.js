@@ -11,7 +11,7 @@ export default [
         img: flexnotes,
         alt: 'FlexNotes',
         codeLink: "https://github.com/conmeconte/flexnotes",
-        demoLink: "https://flexnotes.net/"
+        demoLink: ""
     },
     {
         name: 'Environmindful',
